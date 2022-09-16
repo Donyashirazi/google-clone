@@ -4,7 +4,7 @@
   "description": "Clone google home page",
   "main": "app.js",
   "scripts": {
-    "app":"node app.js",
+    "app": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Donyashirazi/google-clone/issues"
   },
-  "homepage": "https://github.com/Donyashirazi/google-clone#readme"
+  "homepage": "https://github.com/Donyashirazi/google-clone#readme",
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
 }
