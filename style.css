@@ -1,0 +1,37 @@
+.donya {
+  background-color: #23bc98;
+}
+.donya .title {
+  font-size: 20px;
+}
+
+.sample-text {
+  color: #23bc98;
+}
+
+.my-class-1 {
+  padding: 1px;
+  margin: 1px;
+}
+
+.my-class-2 {
+  padding: 2px;
+  margin: 2px;
+}
+
+.my-class-3 {
+  padding: 3px;
+  margin: 3px;
+}
+
+.my-class-4 {
+  padding: 4px;
+  margin: 4px;
+}
+
+.my-class-5 {
+  padding: 5px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
