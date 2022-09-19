@@ -10,63 +10,76 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div>
-        <div><a href="">Gmail</a></div>
-        <div><a href="">Images</a></div>
-        <div id="sidebar">
-          <a href="#"><i class="fa-solid fa-grid"></i></a>
+      <div id="headerTop">
+        <div class="nav"><a href="">Gmail</a></div>
+        <div class="nav"><a href="">Images</a></div>
+        <div class="nav" id="sidebar">
+          <a href="#"><i class="fa-solid fas fa-grip"></i></a>
         </div>
-
-        <div>
-          <a href="#"><img src="" alt="" /></a>
+        <div class="nav">
+          <a href="#"><i class="fas fa-image"></i><img src="" alt="" /></a>
         </div>
       </div>
     </header>
+
     <main id="main">
-      <div id="inputbox">
-        <form action=""><img src="img/image.png" alt="Google icon" /></form>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Search Google or type a URL"
-        />
-      </div>
-      <div id="btns">
+      <div id="container">
         <form action="">
-          <button id="btn1">Google Search</button>
-          <button id="btn2">I'm Feeling Lucky</button>
+          <img
+            src="img/image.png"
+            alt="Google icon"
+            width="272px"
+            height="92px"
+          />
         </form>
-      </div>
-      <div>
-        <p>
-          Google Offered in:
-          <span>
-            <a href="#">فارسی</a>
-            <a href="#">nederlands</a>
-            <a href="#">Frysk</a>
-          </span>
-        </p>
+        <div class="inputbox">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+          <input
+            type="text"
+            name=""
+            id="icon"
+            placeholder="Search Google or type a URL"
+          />
+          <a href="#"><i class="fa-solid fas fa-microphone"></i></a>
+        </div>
+
+        <div id="btns">
+          <form action="">
+            <button id="btn1">Google Search</button>
+            <button id="btn2">I'm Feeling Lucky</button>
+          </form>
+        </div>
+        <div id="languages">
+          <p>
+            Google Offered in:
+            <span>
+              <a href="#">فارسی</a>
+            </span>
+          </p>
+        </div>
       </div>
       <form action=""></form>
     </main>
     <footer>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Bussiness</a></li>
-        <li><a href="#">How Search works</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Settings</a></li>
+      <ul id="footerBelow">
+        <ul class="left">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Bussiness</a></li>
+          <li><a href="#">How Search works</a></li>
+        </ul>
+
+        <ul class="right">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
       </ul>
     </footer>
   </body>

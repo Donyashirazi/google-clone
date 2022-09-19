@@ -1,37 +1,126 @@
-.donya {
-  background-color: #23bc98;
-}
-.donya .title {
-  font-size: 20px;
-}
-
-.sample-text {
-  color: #23bc98;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
 }
 
-.my-class-1 {
-  padding: 1px;
-  margin: 1px;
+#headerTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+#headerTop .nav {
+  padding: 8px;
+}
+#headerTop .nav a {
+  text-decoration: none;
+  color: rgb(107, 101, 101);
+  font-size: 13px;
 }
 
-.my-class-2 {
-  padding: 2px;
-  margin: 2px;
+main #container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
-
-.my-class-3 {
-  padding: 3px;
-  margin: 3px;
+main .inputbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid rgb(183, 181, 181) 0.5px;
+  border-radius: 20px;
 }
-
-.my-class-4 {
-  padding: 4px;
-  margin: 4px;
+main .inputbox input {
+  width: 400px;
+  padding: 10px;
+  border: none;
+  outline: none;
 }
-
-.my-class-5 {
+main .inputbox a {
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(107, 101, 101);
+  font-size: 13px;
+}
+main #btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #btns button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 15px;
+  color: rgb(62, 57, 57);
+}
+main #btns button:hover {
+  border: solid rgb(185, 180, 180) 0.2px;
+}
+main #btns button:focus {
+  border: solid rgb(67, 67, 236) 0.2px;
+}
+main #languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main #languages p {
+  color: rgb(92, 88, 83);
+  font-size: 12px;
+}
+main #languages a {
+  text-decoration: none;
   padding: 5px;
-  margin: 5px;
+}
+main #languages a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+}
+footer .left {
+  float: left;
+  display: inline;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+footer .right {
+  float: right;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+footer ul {
+  list-style-type: none;
+  display: inline-block;
+  flex-direction: row;
+  padding: 10px;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(107, 101, 101);
+  font-size: 13px;
+}
+footer ul li a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
