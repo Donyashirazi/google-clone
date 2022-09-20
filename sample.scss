@@ -1,21 +1,136 @@
-$primaryColor: #23bc98;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-.donya {
-  background-color: $primaryColor;
-  .title {
-    font-size: 20px;
+$textdecoration: underline;
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+@mixin textDecoration {
+  text-decoration: none;
+  color: rgb(107, 101, 101);
+  font-size: 13px;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerTop {
+  @include flexCenter(row);
+  position: absolute;
+  right: 10px;
+
+  .nav {
+    padding: 8px;
+    a {
+      @include textDecoration();
+    }
   }
 }
 
-.sample-text {
-  color: $primaryColor;
+main {
+  #container {
+    @include flexCenter(column);
+    height: 90vh;
+  }
+  .inputbox {
+    @include flexCenter(row);
+    border: solid rgb(183, 181, 181) 0.5px;
+    border-radius: 20px;
+
+    input {
+      width: 400px;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    a {
+      padding: 12px;
+      @include textDecoration();
+    }
+  }
+  #btns {
+    @include flexCenter(row);
+
+    form {
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin: 15px;
+      color: rgb(62, 57, 57);
+
+      &:hover {
+        border: solid rgb(185, 180, 180) 0.2px;
+      }
+      &:focus {
+        border: solid rgb(67, 67, 236) 0.2px;
+      }
+    }
+  }
+
+  #languages {
+    @include flexCenter(row);
+
+    p {
+      color: rgb(92, 88, 83);
+      font-size: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 5px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
 
-$padding-sizes: 1, 2, 3, 4, 5;
+  .left {
+    float: left;
+    display: inline;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+  }
 
-@each $size in $padding-sizes {
-  .my-class-#{$size} {
-    padding: #{$size}px;
-    margin: #{$size}px;
+  .right {
+    float: right;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-block;
+    flex-direction: row;
+    padding: 10px;
+
+    li {
+      display: inline-block;
+      a {
+        padding: 10px;
+        @include textDecoration();
+        &:hover {
+          text-decoration: $textdecoration;
+        }
+      }
+    }
   }
 }
