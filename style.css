@@ -4,6 +4,60 @@
   font-family: "Roboto";
 }
 
+header .sideNavigation {
+  position: fixed;
+  right: 20px;
+  top: 50px;
+  height: 510px;
+  width: 350px;
+  background-color: rgb(255, 255, 255);
+  border: 1px rgb(39, 39, 39);
+  box-shadow: 5px 0px 5px 5px rgb(90, 88, 88);
+  border-radius: 10px;
+}
+header .sideNavigation .sideNavigation .active {
+  visibility: visible;
+}
+header .sideNavigation .gridContainer {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  height: 500px;
+  width: 350px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+header .sideNavigation .gridContainer .grid-item {
+  display: flex;
+  flex-direction: center;
+}
+header .sideNavigation .gridContainer .grid-item a {
+  color: rgba(0, 0, 0, 0.783);
+  text-decoration: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+header .sideNavigation .gridContainer .grid-item a .fab,
+header .sideNavigation .gridContainer .grid-item a .fas {
+  display: flex;
+  justify-content: center;
+}
+header .sideNavigation .gridContainer .grid-item p {
+  margin-top: 20px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
 #headerTop {
   display: flex;
   flex-direction: row;
@@ -13,6 +67,7 @@
   right: 10px;
 }
 #headerTop .nav {
+  border: none;
   padding: 8px;
 }
 #headerTop .nav a {

@@ -19,6 +19,74 @@ $textdecoration: underline;
   justify-content: center;
   align-items: center;
 }
+@mixin navBar {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  .sideNavigation {
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    height: 510px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(39, 39, 39);
+    box-shadow: 5px 0px 5px 5px rgb(90, 88, 88);
+    border-radius: 10px;
+    // transform: translateX(110%);
+    // transition: transform 0.5s ease-in-out;
+
+    .sideNavigation .active {
+      visibility: visible;
+    }
+
+    .gridContainer {
+      position: fixed;
+      right: 20px;
+      top: 60px;
+      height: 500px;
+      width: 350px;
+      display: grid;
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+
+      .grid-item {
+        display: flex;
+        flex-direction: center;
+
+        a {
+          color: rgba(0, 0, 0, 0.783);
+          text-decoration: none;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-content: center;
+
+          .fab,
+          .fas {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        p {
+          margin-top: 20px;
+          display: flex;
+          text-decoration: none;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          align-content: center;
+        }
+      }
+    }
+  }
+}
 
 #headerTop {
   @include flexCenter(row);
@@ -26,7 +94,9 @@ $textdecoration: underline;
   right: 10px;
 
   .nav {
+    border: none;
     padding: 8px;
+
     a {
       @include textDecoration();
     }
@@ -57,9 +127,6 @@ main {
   }
   #btns {
     @include flexCenter(row);
-
-    form {
-    }
 
     button {
       padding: 10px;
