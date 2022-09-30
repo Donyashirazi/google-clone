@@ -1,285 +1,282 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div id="headerTop">
-        <button class="nav"><a href="">Gmail</a></button>
-        <button class="nav"><a href="">Images</a></button>
-        <button class="nav" id="sideBar">
-          <a href="#"> <i class="fa-solid fas fa-grip"></i></a>
-        </button>
-        <button class="nav">
-          <a href="#"><i class="fas fa-image"></i><img src="" alt="" /></a>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <div id="headerTop">
+    <button class="nav"><a href="">Gmail</a></button>
+    <button class="nav"><a href="">Images</a></button>
+    <button class="nav" id="sideBar">
+      <a href="#"> <i class="fa-solid fas fa-grip"></i></a>
+    </button>
+    <button class="nav">
+      <a href="#"><i class="fas fa-image"></i><img src="" alt="" /></a>
+    </button>
+  </div>
+
+  <div class="sideNavigation">
+    <div class="gridContainer">
+      <div class="grid-item grid-item-1">
+        <a href="#"
+        ><i class="fas fa-image fa-2xl"></i>
+          <p>Account</p></a
+        >
       </div>
-
-      <div class="sideNavigation">
-        <div class="gridContainer">
-          <div class="grid-item grid-item-1">
-            <a href="#"
-              ><i class="fas fa-image fa-2xl"></i>
-              <p>Account</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-2">
-            <a href="#"
-              ><i class="fab fa-google fa-2xl"></i>
-              <p>Search</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-3">
-            <a href="#"
-              ><i class="fas fa-location-dot fa-2xl"></i>
-              <p>Maps</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-4">
-            <a href="#"
-              ><i class="fab fa-youtube fa-2xl"></i>
-              <p>Youtube</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-5">
-            <a href="#"
-              ><i class="fab fa-google-play fa-2xl"></i>
-              <p>Play</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-6">
-            <a href="#"
-              ><i class="fab fa-youtube fa-2xl"></i>
-              <p>News</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-7">
-            <a href="#"
-              ><i class="fas fa-m fa-2xl"></i>
-              <p>Gmail</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-8">
-            <a href="#"
-              ><i class="fas fa-people-arrows-left-right fa-2xl"></i>
-              <p>Meet</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-9">
-            <a href="#"
-              ><i class="fas fa-comments fa-2xl"></i>
-              <p>Chat</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-10">
-            <a href="#"
-              ><i class="fas fa-phone fa-2xl"></i>
-              <p>Contacts</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-11">
-            <a href="#"
-              ><i class="fab fa-google-drive fa-2xl"></i>
-              <p>Drive</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-12">
-            <a href="#"
-              ><i class="fas fa-calendar-days fa-2xl"></i>
-              <p>Calender</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-13">
-            <a href="#"
-              ><i class="fas fa-arrow-right-arrow-left fa-2xl"></i>
-              <p>Translate</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-14">
-            <a href="#"
-              ><i class="fas fa-image fa-2xl"></i>
-              <p>Photoes</p></a
-            >
-          </div>
-          <div class="grid-item grid-item-15">
-            <a href="#"
-              ><i class="fas fa-video fa-2xl"></i>
-              <p>Duo</p></a
-            >
-          </div>
-        </div>
+      <div class="grid-item grid-item-2">
+        <a href="#"
+        ><i class="fab fa-google fa-2xl"></i>
+          <p>Search</p></a
+        >
       </div>
-
-      <!-- <div id="sideNavigation">
-        <div class="firstRow">
-        <ul>
-          <li>
-            <a href="#"
-              ><i class="fas fa-image fa-2xl"></i><br />
-              Account</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fab fa-google fa-2xl"></i><br />
-              Search</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fas fa-location-dot fa-2xl"></i><br />
-              Maps</a
-            >
-          </li>
-        </ul>
+      <div class="grid-item grid-item-3">
+        <a href="#"
+        ><i class="fas fa-location-dot fa-2xl"></i>
+          <p>Maps</p></a
+        >
       </div>
-
-      <div class="secondRow">
-        <ul>
-          <li>
-            <a href="#"
-              ><i class="fab fa-youtube fa-2xl"></i><br />
-              Youtube</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-play fa-2xl"></i><br />Play</a>
-          </li>
-          <li>
-            <a href="#"
-              ><a href="#"><i class="fab fa-youtube fa-2xl"></i><br>News</a>
-          </li>
-        </ul>
+      <div class="grid-item grid-item-4">
+        <a href="#"
+        ><i class="fab fa-youtube fa-2xl"></i>
+          <p>Youtube</p></a
+        >
       </div>
-
-      <div class="thirdRow">
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-m fa-2xl"></i><br>Gmail</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-people-arrows-left-right fa-2xl"></i><br>Meet</a
-          >
-          </li>
-          <li>
-            <a href="#"
-              ><a href="#"><i class="fas fa-comments fa-2xl"></i><br>Chat</a>
-          </li>
-        </ul>
+      <div class="grid-item grid-item-5">
+        <a href="#"
+        ><i class="fab fa-google-play fa-2xl"></i>
+          <p>Play</p></a
+        >
       </div>
-
-      <div class="fourthRow">
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-phone fa-2xl"></i><br>Contact</a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-google-drive fa-2xl"></i><br>Drive</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-calendar-days fa-2xl"></i><br>Calender</a>          
-          </li>
-        </ul>
+      <div class="grid-item grid-item-6">
+        <a href="#"
+        ><i class="fab fa-youtube fa-2xl"></i>
+          <p>News</p></a
+        >
       </div>
-
-      <div class="fifthRow">
-        <ul>
-          <li>
-            <a href="#"
-              ><i class="fas fa-arrow-right-arrow-left fa-2xl"></i><br>Translate</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-image fa-2xl"></i><br>Photoes</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-video fa-2xl"></i><br>Duo</a>
-          </li>
-        </ul>
+      <div class="grid-item grid-item-7">
+        <a href="#"
+        ><i class="fas fa-m fa-2xl"></i>
+          <p>Gmail</p></a
+        >
       </div>
-    </div> -->
-
-      <!-- <div id="sideBar">
-      <div class="one"><a href="#"><i class="fas fa-image"></i>
-        <p>Account</p>
+      <div class="grid-item grid-item-8">
+        <a href="#"
+        ><i class="fas fa-people-arrows-left-right fa-2xl"></i>
+          <p>Meet</p></a
+        >
       </div>
-
-      <div class="two"><a href="#"
-        ><i class="fab fa-google"></i>
-        <p>Search</p>
+      <div class="grid-item grid-item-9">
+        <a href="#"
+        ><i class="fas fa-comments fa-2xl"></i>
+          <p>Chat</p></a
+        >
       </div>
-
-      <div class="three"><a href="#"><i class="fas fa-image"></i>
-        <p>Account</p>
+      <div class="grid-item grid-item-10">
+        <a href="#"
+        ><i class="fas fa-phone fa-2xl"></i>
+          <p>Contacts</p></a
+        >
       </div>
-    </div> -->
-    </header>
+      <div class="grid-item grid-item-11">
+        <a href="#"
+        ><i class="fab fa-google-drive fa-2xl"></i>
+          <p>Drive</p></a
+        >
+      </div>
+      <div class="grid-item grid-item-12">
+        <a href="#"
+        ><i class="fas fa-calendar-days fa-2xl"></i>
+          <p>Calender</p></a
+        >
+      </div>
+      <div class="grid-item grid-item-13">
+        <a href="#"
+        ><i class="fas fa-arrow-right-arrow-left fa-2xl"></i>
+          <p>Translate</p></a
+        >
+      </div>
+      <div class="grid-item grid-item-14">
+        <a href="#"
+        ><i class="fas fa-image fa-2xl"></i>
+          <p>Photoes</p></a
+        >
+      </div>
+      <div class="grid-item grid-item-15">
+        <a href="#"
+        ><i class="fas fa-video fa-2xl"></i>
+          <p>Duo</p></a
+        >
+      </div>
+    </div>
+  </div>
 
-    <main id="main">
-      <div id="container">
-        <form action="">
-          <img
-            src="img/image.png"
-            alt="Google icon"
-            width="272px"
-            height="92px"
-          />
-        </form>
-        <div class="inputbox">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+  <!-- <div id="sideNavigation">
+    <div class="firstRow">
+    <ul>
+      <li>
+        <a href="#"
+          ><i class="fas fa-image fa-2xl"></i><br />
+          Account</a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fab fa-google fa-2xl"></i><br />
+          Search</a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><i class="fas fa-location-dot fa-2xl"></i><br />
+          Maps</a
+        >
+      </li>
+    </ul>
+  </div>
 
-          <input
-            type="text"
-            name=""
-            id="icon"
-            placeholder="Search Google or type a URL"
-          />
-          <a href="#"><i class="fa-solid fas fa-microphone"></i></a>
-        </div>
+  <div class="secondRow">
+    <ul>
+      <li>
+        <a href="#"
+          ><i class="fab fa-youtube fa-2xl"></i><br />
+          Youtube</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-google-play fa-2xl"></i><br />Play</a>
+      </li>
+      <li>
+        <a href="#"
+          ><a href="#"><i class="fab fa-youtube fa-2xl"></i><br>News</a>
+      </li>
+    </ul>
+  </div>
 
-        <div id="btns">
-          <form action="">
-            <button id="btn1">Google Search</button>
-            <button id="btn2">I'm Feeling Lucky</button>
-          </form>
-        </div>
-        <div id="languages">
-          <p>
-            Google Offered in:
-            <span>
+  <div class="thirdRow">
+    <ul>
+      <li>
+        <a href="#"><i class="fas fa-m fa-2xl"></i><br>Gmail</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-people-arrows-left-right fa-2xl"></i><br>Meet</a
+      >
+      </li>
+      <li>
+        <a href="#"
+          ><a href="#"><i class="fas fa-comments fa-2xl"></i><br>Chat</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fourthRow">
+    <ul>
+      <li>
+        <a href="#"><i class="fas fa-phone fa-2xl"></i><br>Contact</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-google-drive fa-2xl"></i><br>Drive</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-calendar-days fa-2xl"></i><br>Calender</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fifthRow">
+    <ul>
+      <li>
+        <a href="#"
+          ><i class="fas fa-arrow-right-arrow-left fa-2xl"></i><br>Translate</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-image fa-2xl"></i><br>Photoes</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-video fa-2xl"></i><br>Duo</a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+  <!-- <div id="sideBar">
+  <div class="one"><a href="#"><i class="fas fa-image"></i>
+    <p>Account</p>
+  </div>
+
+  <div class="two"><a href="#"
+    ><i class="fab fa-google"></i>
+    <p>Search</p>
+  </div>
+
+  <div class="three"><a href="#"><i class="fas fa-image"></i>
+    <p>Account</p>
+  </div>
+</div> -->
+</header>
+
+<main id="main">
+  <div id="container">
+    <form action="">
+      <img
+        src="img/image.png"
+        alt="Google icon"
+        width="272px"
+        height="92px"
+      />
+    </form>
+    <div class="inputbox">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+      <input
+        type="text"
+        name=""
+        id="icon"
+        placeholder="Search Google or type a URL"
+      />
+      <a href="#"><i class="fa-solid fas fa-microphone"></i></a>
+    </div>
+
+    <div id="btns">
+      <form action="">
+        <button id="btn1">Google Search</button>
+        <button id="btn2">I'm Feeling Lucky</button>
+      </form>
+    </div>
+    <div id="languages">
+      <p>
+        Google Offered in:
+        <span>
               <a href="#">فارسی</a>
             </span>
-          </p>
-        </div>
-      </div>
-      <form action=""></form>
-    </main>
-    <footer>
-      <ul id="footerBelow">
-        <ul class="left">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Bussiness</a></li>
-          <li><a href="#">How Search works</a></li>
-        </ul>
+      </p>
+    </div>
+  </div>
+  <form action=""></form>
+</main>
+<footer>
+  <ul id="footerBelow">
+    <ul class="left">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Advertising</a></li>
+      <li><a href="#">Bussiness</a></li>
+      <li><a href="#">How Search works</a></li>
+    </ul>
 
-        <ul class="right">
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </ul>
-    </footer>
-  </body>
-  <script src="app.js"></script>
+    <ul class="right">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </ul>
+</footer>
+</body>
+<script src="app.js"></script>
 </html>
