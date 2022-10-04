@@ -27,20 +27,11 @@ $textdecoration: underline;
 
 header {
   .sideNavigation {
-    position: fixed;
-    right: 20px;
-    top: 50px;
-    height: 510px;
-    width: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+    visibility: hidden;
 
-    background-color: rgb(255, 255, 255);
-    border: 1px rgb(39, 39, 39);
-    box-shadow: 5px 0px 5px 5px rgb(90, 88, 88);
-    border-radius: 10px;
-    // transform: translateX(110%);
-    // transition: transform 0.5s ease-in-out;
-
-    .sideNavigation .active {
+    .active {
       visibility: visible;
     }
 
@@ -48,14 +39,18 @@ header {
       position: fixed;
       right: 20px;
       top: 60px;
-      height: 500px;
-      width: 350px;
+      height: 75vh;
+      width: 25vw;
       display: grid;
       grid-template-columns: 33.33% 33.33% 33.33%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 24% 20% 20% 20% 20%;
       align-items: center;
       justify-items: center;
       justify-content: center;
+      background-color: rgb(255, 255, 255);
+      border: 1px rgb(39, 39, 39);
+      box-shadow: 5px 0px 5px 5px rgb(147, 144, 144);
+      border-radius: 10px;
 
       .grid-item {
         display: flex;
