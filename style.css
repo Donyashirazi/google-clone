@@ -8,6 +8,9 @@ header .sideNavigation {
   overflow: hidden;
   overflow-y: scroll;
   visibility: hidden;
+  border: 1px rgb(39, 39, 39);
+  box-shadow: 5px 0px 5px 5px rgb(147, 144, 144);
+  border-radius: 10px;
 }
 header .sideNavigation .active {
   visibility: visible;
@@ -32,6 +35,11 @@ header .sideNavigation .gridContainer {
 header .sideNavigation .gridContainer .grid-item {
   display: flex;
   flex-direction: center;
+}
+header .sideNavigation .gridContainer .grid-item .grid-item-1,
+header .sideNavigation .gridContainer .grid-item .grid-item-2,
+header .sideNavigation .gridContainer .grid-item .grid-item-3 {
+  visibility: hidden;
 }
 header .sideNavigation .gridContainer .grid-item a {
   color: rgba(0, 0, 0, 0.783);

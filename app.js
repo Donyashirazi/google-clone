@@ -9,5 +9,11 @@ let gridContainer = document.querySelector(".gridContainer");
 sideBar.onclick = function () {
   setTimeout(() => {
     gridContainer.classList.toggle("active");
-  }, 1000);
+  }, 500);
+};
+
+document.onclick = function (screenClick) {
+  if (screenClick.target.id !== gridContainer) {
+    gridContainer.classList.remove("active");
+  }
 };

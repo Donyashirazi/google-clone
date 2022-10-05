@@ -30,6 +30,9 @@ header {
     overflow: hidden;
     overflow-y: scroll;
     visibility: hidden;
+    border: 1px rgb(39, 39, 39);
+    box-shadow: 5px 0px 5px 5px rgb(147, 144, 144);
+    border-radius: 10px;
 
     .active {
       visibility: visible;
@@ -55,6 +58,12 @@ header {
       .grid-item {
         display: flex;
         flex-direction: center;
+
+        .grid-item-1,
+        .grid-item-2,
+        .grid-item-3 {
+          visibility: hidden;
+        }
 
         a {
           color: rgba(0, 0, 0, 0.783);
