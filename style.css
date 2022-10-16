@@ -4,18 +4,34 @@
   font-family: "Roboto";
 }
 
+header .sideMenu {
+  visibility: hidden;
+}
+header #second {
+  background-color: #b05151;
+  position: fixed;
+  right: 40px;
+  top: 60px;
+  height: 40vh;
+  width: 30vw;
+  border: 1px solid gray;
+}
+header #third {
+  background-color: aqua;
+  position: fixed;
+  right: 60px;
+  top: 60px;
+  height: 40vh;
+  width: 30vw;
+  border: 1px solid gray;
+}
 header #sideNavigation {
-  background-color: #434343;
+  background-color: #b05151;
   position: fixed;
   right: 20px;
   top: 60px;
-  height: 75vh;
-  width: 25vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: center;
+  height: 66vh;
+  width: 30vw;
   overflow: hidden;
   overflow-y: scroll;
   border: 1px rgb(39, 39, 39);
@@ -23,17 +39,23 @@ header #sideNavigation {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
 }
-header #sideNavigation .active {
+header #sideNavigation.active {
   visibility: visible;
+}
+header #sideNavigation .gridContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10%;
 }
 header #sideNavigation .gridContainer .grid-item {
   display: flex;
-  flex-direction: center;
-}
-header #sideNavigation .gridContainer .grid-item .grid-item-1,
-header #sideNavigation .gridContainer .grid-item .grid-item-2,
-header #sideNavigation .gridContainer .grid-item .grid-item-3 {
-  visibility: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 16vh;
+  width: 8vw;
 }
 header #sideNavigation .gridContainer .grid-item a {
   color: rgba(0, 0, 0, 0.783);
