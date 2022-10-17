@@ -4,28 +4,16 @@
   font-family: "Roboto";
 }
 
-header .sideMenu {
-  visibility: hidden;
-}
-header #second {
+header #first {
   background-color: #b05151;
-  position: fixed;
-  right: 40px;
-  top: 60px;
-  height: 40vh;
-  width: 30vw;
-  border: 1px solid gray;
+  visibility: hidden;
+  width: 50vw;
 }
-header #third {
-  background-color: aqua;
-  position: fixed;
-  right: 60px;
-  top: 60px;
-  height: 40vh;
-  width: 30vw;
-  border: 1px solid gray;
+header #first.active {
+  visibility: visible;
 }
 header #sideNavigation {
+  display: none;
   background-color: #b05151;
   position: fixed;
   right: 20px;
@@ -40,7 +28,7 @@ header #sideNavigation {
   background-color: rgb(255, 255, 255);
 }
 header #sideNavigation.active {
-  visibility: visible;
+  display: block;
 }
 header #sideNavigation .gridContainer {
   display: flex;
@@ -79,6 +67,22 @@ header #sideNavigation .gridContainer .grid-item p {
   align-items: center;
   align-content: center;
 }
+header #second {
+  background-color: #4e3333;
+  display: none;
+  width: 50vw;
+}
+header #second.active {
+  display: block;
+}
+header #fourth {
+  background-color: #4a1a1a;
+  display: none;
+  width: 50vw;
+}
+header #fourth.active {
+  display: block;
+}
 
 #headerTop {
   display: flex;
@@ -103,7 +107,7 @@ main #container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 main .inputbox {
   display: flex;

@@ -27,29 +27,16 @@ $textdecoration: underline;
 }
 
 header {
-  .sideMenu {
-    visibility: hidden;
-  }
-  #second {
+  #first {
     background-color: #b05151;
-    position: fixed;
-    right: 40px;
-    top: 60px;
-    height: 40vh;
-    width: 30vw;
-    border: 1px solid gray;
+    visibility: hidden;
+    width: 50vw;
+    &.active {
+      visibility: visible;
+    }
   }
-  #third {
-    background-color: aqua;
-    position: fixed;
-    right: 60px;
-    top: 60px;
-    height: 40vh;
-    width: 30vw;
-    border: 1px solid gray;
-  }
-
   #sideNavigation {
+    display: none;
     background-color: #b05151;
     position: fixed;
     right: 20px;
@@ -62,9 +49,8 @@ header {
     box-shadow: 5px 0px 5px 5px rgb(147, 144, 144);
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-
     &.active {
-      visibility: visible;
+      display: block;
     }
 
     .gridContainer {
@@ -108,6 +94,22 @@ header {
       }
     }
   }
+  #second {
+    background-color: #4e3333;
+    display: none;
+    width: 50vw;
+    &.active {
+      display: block;
+    }
+  }
+  #fourth {
+    background-color: #4a1a1a;
+    display: none;
+    width: 50vw;
+    &.active {
+      display: block;
+    }
+  }
 }
 
 #headerTop {
@@ -128,7 +130,7 @@ header {
 main {
   #container {
     @include flexCenter(column);
-    height: 90vh;
+    height: 80vh;
   }
   .inputbox {
     @include flexCenter(row);
